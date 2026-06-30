@@ -153,6 +153,13 @@ description: "Task list for Ticket Triage Dashboard v1"
 
 ---
 
+## Phase 8: Convergence
+
+- [X] T034 Add `where: { status: 'open' }` filter to `db.ticket.findMany` in app/tickets/page.tsx and add a second query for distinct non-null owner names from all tickets (regardless of status); pass the result as an `initialOwnerSuggestions` prop to TicketBoard so TicketBoard can merge server-provided names with locally-derived ones, satisfying FR-001 (only open tickets displayed) and FR-005 (autocomplete draws from all tickets) simultaneously per FR-001 / FR-005 (partial)
+- [X] T035 [P] Add dev-only @axe-core/react initialization to app/layout.tsx (import and call `axe(React, ReactDOM, 1000)` inside a `typeof window !== 'undefined'` guard or a `useEffect` in a client wrapper); this is the supplementary console diagnostic called for by T017 — the CI accessibility gate (T032) is already in place per T017 (partial)
+
+---
+
 ## Dependencies & Execution Order
 
 ### Phase Dependencies
