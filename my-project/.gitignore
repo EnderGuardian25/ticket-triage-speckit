@@ -1,0 +1,33 @@
+# dependencies
+node_modules/
+.pnp
+.pnp.js
+
+# Next.js
+.next/
+out/
+
+# production
+build/
+dist/
+
+# database
+*.db
+*.db-journal
+prisma/migrations/
+
+# env files
+.env
+.env*.local
+
+# testing
+coverage/
+
+# misc
+.DS_Store
+Thumbs.db
+*.log
+*.tmp
+*.swp
+.vscode/
+.idea/
