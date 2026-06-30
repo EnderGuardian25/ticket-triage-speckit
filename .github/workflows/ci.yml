@@ -10,6 +10,9 @@ defaults:
   run:
     working-directory: ./my-project
 
+env:
+  HUSKY: 0
+
 jobs:
   lint:
     name: Lint
